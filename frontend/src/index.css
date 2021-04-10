@@ -1,0 +1,926 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Poppins', sans-serif;
+  height: 100%;
+  background-size: cover;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.tite-img-container {
+  background-color: #f2dcdd;
+}
+
+.bg-blue-container {
+  background-color: #2741cc;
+  padding: 3% 0;
+}
+
+.bg-white-container {
+  margin-bottom: 2%;
+}
+
+.bg-white-container, .bg-blue-container, .tite-img-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.tite-img-container img {
+  height: 300px;
+  margin-left: 3%;
+}
+
+.logo {
+  margin: 1% 0 0.5% 5%;
+}
+
+.bg-white-container img {
+  height: 350px;
+}
+
+.bg-blue-container img {
+  height: 300px;
+}
+
+.bg-white-container h2, .bg-blue-container h2 {
+  font-size: 2rem;
+  width: 250px;
+  line-height: 1.3;
+  margin-bottom: 0;
+}
+
+.bg-white-container h2 {
+  color: #2741cc;
+}
+
+.bg-blue-container h2 {
+  color: white;
+}
+
+.tite-img-container h1 {
+  font-size: 4rem;
+  width: 100px;
+  color: #2741cc;
+  line-height: 1;
+  margin-bottom: 0;
+}
+
+.tite-img-container h3 {
+  font-size: 1.2rem;
+  color: #2741cc;
+  line-height: 1;
+}
+
+/* NAVBAR */
+
+.nav-bar-container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+  align-items: center;
+  margin-right: 8%;
+}
+
+.nav-bar-container li {
+  list-style-type: none;
+  width: 120px;
+  margin: 0 0.1%;
+  text-align: center;
+}
+
+.nav-bar-container ul {
+  margin: 0;
+  width: max-content;
+}
+
+.link-search, .link-log-in, .link-sign-up {
+  text-decoration: none;
+}
+
+.link-sign-up {
+  color: #2741cc;
+  background-color: #f2dcdd;
+  padding: 5% 10%;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.link-sign-up:hover {
+  background-color: #2741cc;
+  color: white;
+}
+
+.link-search, .link-log-in {
+  color: #2741cc;
+  font-weight: 400;
+}
+
+.link-search:hover, .link-log-in:hover {
+  text-decoration: underline;
+}
+
+.container-el-nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-el-nav img {
+  border-radius: 50%;
+  height: 60px;
+  margin: 1% 0 1% 5%;
+}
+
+/* MODAL  */
+
+.container-sing-in {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.blue-bg {
+  background-color: #2741cc;
+  height: 90vh;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2% 1%;
+}
+
+.logo-modal-sign-up img {
+  height: 30px;
+}
+
+.name-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.last-name-sign-up {
+  display: flex;
+  flex-flow: column;
+  align-self: flex-end;
+  justify-content: center;
+  width: 50%;
+  padding-left: 2%;
+}
+
+.name-sign-up {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  width: 50%;
+  padding-right: 2%;
+}
+
+.blue-bg img {
+  height: 250px;
+}
+
+.form-container {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  height: 80vh;
+  width: 50vw;
+  padding: 5% 7%;
+  overflow: hidden;
+}
+
+.form-sign-up, .form-sign-in {
+  display: flex;
+  flex-flow: column;
+}
+
+.close-button {
+  display: flex;
+  justify-content: flex-end;
+  color: #2741cc;
+}
+
+.close-button:hover {
+  color: #c06e73;
+}
+
+.sign-in-title, .logo-modal {
+  display: flex;
+  justify-content: center;
+}
+
+.logo-modal img {
+  border-radius: 50%;
+  height: 100px;
+}
+
+.sign-in-title {
+  color: #2741cc;
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-top: 5%;
+}
+
+.form-sign-up label, .form-sign-in label {
+  color: #2741cc;
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 5% 0 0 0;
+}
+
+.form-sign-in input {
+  border: 1px solid #c0c0c0;
+  border-radius: 4px;
+  padding: 3%;
+  color: #2741cc;
+}
+
+.input-la {
+  border: 1px solid#c0c0c0;
+  border-radius: 4px;
+  padding: 2%;
+  color: #2741cc;
+}
+
+.name-sign-up-input {
+  border: 1px solid #c0c0c0;
+  border-radius: 4px;
+  padding: 4%;
+  color: #2741cc;
+}
+
+.form-sign-up button, .form-sign-in button {
+  background-color: #2741cc;
+  color: white;
+  padding: 4% 0;
+  border: none;
+  margin-top: 3%;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.form-sign-up button:hover, .form-sign-in button:hover {
+  background-color: white;
+  color: #2741cc;
+}
+
+.sign-up-title {
+  color: #2741cc;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+/* SEARCH */
+
+.container-search {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.container-search img {
+  margin-top: -100px;
+  height: 250px;
+  margin-left: 240px;
+}
+
+.title-search {
+  color: #2741cc;
+  font-size: 4rem;
+  font-weight: 800;
+  margin-top: -25px;
+}
+
+.input-search {
+  border: 3px solid #f2dcdd;
+  border-radius: 10px;
+  width: 65%;
+  padding: 2% 3%;
+  color: #2741cc;
+}
+
+.input-search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3%;
+}
+
+.button-search {
+  background-color: #2741cc;
+  color: white;
+  padding: 2%;
+  border: none;
+  margin-left: 2%;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.button-search:hover {
+  background-color: #f2dcdd;
+  color: #2741cc;
+}
+
+/* CARD */
+
+.container-card {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2dcdd;
+  border-radius: 10px;
+  width: 25%;
+  margin: 2% 3%;
+}
+
+.photo-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.detail-card {
+  height: 100px;
+  margin: 2% 1% 3% 15%;
+}
+
+.photo-dog {
+  margin-top: 5%;
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+}
+
+.list-dogs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.info-container-card {
+  background-color: white;
+  margin: 3%;
+  width: 75%;
+  padding: 3% 7%;
+  color: #2741cc;
+  font-weight: 600;
+  border-radius: 10px;
+}
+
+.card-button {
+  background-color: #2741cc;
+  border: none;
+  border-radius: 5px;
+  padding: 2% 5%;
+  margin-bottom: 4%;
+  width: 45%;
+  font-size: 1rem;
+  color: white;
+}
+
+.card-button:hover {
+  background-color: white;
+  color: #2741cc;
+}
+
+/* MODAL SEARCH */
+
+.filter-modal {
+  background-color: #f2dcdd;
+  color: #2741cc;
+  width: 50px;
+  margin-left: 7%;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  padding: 18% 5%;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.filter-modal:hover {
+  background-color: #2741cc;
+  color: #f2dcdd;
+}
+
+.filter {
+  height: 50px;
+  width: 1000px;
+}
+
+.search-title {
+  color: #2741cc;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.form-search-input {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.max-min {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.max-min input {
+  width: 33.5%;
+  margin: 0 2%;
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 1% 3%;
+}
+
+.label-search, .max-min label {
+  color: #2741cc;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.mesures {
+  line-height: 0.5;
+}
+
+.bottom-search {
+  margin-top: 3%;
+}
+
+.bottom-search input {
+  margin: 0 2%;
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 1% 3%;
+  width: 25%;
+}
+
+.top-search label {
+  margin-right: 10px;
+}
+
+.top-search select {
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.search-btn {
+  width: 100%;
+  margin-top: 4%;
+  font-size: 1rem;
+  padding: 2% 5%;
+  border: none;
+  border-radius: 10px;
+  color: #f2dcdd;
+  background-color: #2741cc;
+}
+
+.search-btn:hover {
+  color: #2741cc;
+  background-color: white;
+}
+
+/* USER HEADER */
+
+.proposal {
+  background-color: #2741cc;
+  color: #f2dcdd;
+  width: 70%;
+  padding: 2% 5%;
+  display: flex;
+  justify-content: center;
+  font-size: 2.2rem;
+  border-radius: 30px;
+}
+
+.welcome {
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: #2741cc;
+  text-align: center;
+}
+
+.header-user-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-size: cover;
+  background: url("img/background1.JPG") no-repeat center center fixed;
+  height: 85vh;
+}
+
+.header-user-container img {
+  height: 500px;
+  margin-left: 5%;
+}
+
+.text-user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  background-color: rgb(242, 220, 221, 0.7);
+  padding: 3% 8%;
+  border-radius: 30px;
+}
+
+/* PROFILE SETTINGS */
+
+.container-settings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* PET PAGE */
+
+.pet-page-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f2dcdd;
+  height:85vh;
+  padding: 5% 0 0.5% 0;
+}
+
+.pet-detail {
+  height: 300px;
+  margin-bottom: 5%;
+}
+
+.pet-photo {
+  height: 230px;
+  width: 230px;
+  border-radius: 50%;
+  margin-top: -200px;
+  margin-left: -120px;
+}
+
+.container-photo-pet-name {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 50%;
+}
+
+.container-photo-pet {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.name-pet {
+  background-color: #2741cc;
+  color: white;
+  padding: 5% 10%;
+  border-radius: 15px;
+  font-size: 1.8rem;
+  font-weight: 600;
+
+}
+.pet-border-container{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  height: 60vh;
+}
+.text-pet {
+  border: 5px solid white;
+  border-radius: 20px;
+  padding: 2%;
+  width: 50%;
+  height:70%;
+  margin-right: 10%;
+  margin-top: -5%;
+}
+
+.info-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.white-container1-pet, .white-container2-pet {
+  background-color: white;
+  color: #2741cc;
+  padding: 2%;
+  width: 50%;
+  border-radius: 20px;
+  margin-bottom: 3%;
+  font-weight: 600;
+}
+
+.white-container1-pet {
+  margin-right: 5%;
+}
+
+.bio-pet {
+  background-color: white;
+  padding: 5%;
+  color: #2741cc;
+  border-radius: 20px;
+  margin-bottom: 2%;
+  font-weight: 600;
+  height:100%;
+}
+
+.adoption-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: -200px;
+  margin-bottom: 3%;
+  margin-left: 5%;
+}
+
+.adoption-status-label {
+  color: #2741cc;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border: 2px solid #2741cc;
+  padding: 1% 2% ;
+  border-radius: 15px;
+}
+
+.adoption-status {
+  background-color: white;
+  color: #2741cc;
+  padding: 2%;
+  border-radius: 15px;
+  margin-left: 3%;
+}
+
+.button-pet-unsaved, .button-pet-adopt-disabled, .button-pet-adopt, .button-pet-save {
+  background-color: #2741cc;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 5%;
+  font-size: 1.2rem;
+  width:50%;
+}
+
+.button-pet-unsaved:hover, .button-pet-adopt:hover, .button-pet-save:hover {
+  background-color: white;
+  color: #2741cc;
+}
+
+.button-pet-adopt, .button-pet-adopt-disabled {
+  margin-right: 3%;
+}
+
+.button-pet-adopt-disabled {
+  opacity: 0.7;
+}
+
+.container-buttons-pet {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* MY PETS */
+
+.toggle-button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.toggle-button {
+  background-color: #2741cc;
+  color: white;
+  padding: 2% 5%;
+  font-size: 1.3rem;
+  border-radius: 15px;
+}
+
+.toggle-button:hover {
+  background-color: #f2dcdd;
+  color: #2741cc;
+}
+
+.container-my-pets-page {
+  background: url("img/background1.JPG");
+  height: 100%;
+  padding: 1% 0;
+}
+
+.no-pets-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 66vh;
+}
+
+.no-pets {
+  font-size: 3rem;
+  color: #2741cc;
+  font-weight: 600;
+  background-color: #f2dcdd;
+  border-radius: 20px;
+  padding: 2% 4%;
+  margin-top: -2%;
+}
+
+/* USER CARD */
+
+.container-card-users {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f2dcdd;
+  border-radius: 15px;
+  padding: 3%;
+  margin: 3% 0 0 1%;
+}
+
+.detail-card-user {
+  height: 70px;
+  margin-right: 5%;
+}
+
+.flex-text-user {
+  display: flex;
+  width: 320px;
+  justify-content: space-between;
+  color: #2741cc;
+  font-weight: 600;
+}
+
+.card-button-user {
+  background-color: #2741cc;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 1.5% 7%;
+  margin-right: 20%;
+  margin-top: 10px;
+}
+
+.card-button-user:hover {
+  background-color: white;
+  color: #2741cc;
+}
+
+/* PET CARD */
+
+.flex-text-pet {
+  display: flex;
+  width: 320px;
+  justify-content: space-between;
+  color: #2741cc;
+  font-weight: 600;
+}
+
+.status-pet {
+  margin-right: 20%;
+}
+
+.photo-pet {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  margin-right: 5%;
+}
+
+/* DASHBOARD */
+
+.container-card-dashboard {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+h2 {
+  color: #2741cc;
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  color: #2741cc;
+  font-weight: 600;
+  font-size: 4rem;
+  margin: 0;
+}
+
+.list-container-dashboard {
+  margin-top: -30px;
+  display: flex;
+  width: 80%;
+  justify-content: space-around;
+}
+
+/* USER DETAILS ADM */
+
+.container-user-info {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  align-items: space-between;
+  background: url("img/background1.JPG") no-repeat center center fixed;
+}
+
+.card-user-info {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  width: 40%;
+  padding: 2%;
+  background-color: #f2dcdd;
+  margin: 5%;
+  height: 55vh;
+  color: #2741cc;
+  font-weight: 600;
+}
+
+.flex-text-card {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+.text-user-card {
+  margin-top: 2%;
+}
+
+.user-bio-card {
+  background-color: white;
+  border-radius: 10px;
+  width: 80%;
+  padding: 2%;
+  height: 80%;
+  margin-top: 3%;
+}
+
+.flex-text-user-page {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+}
+
+.title-user-card {
+  border: 2px solid white;
+  border-radius: 15px;
+  padding: 1% 4%;
+}
+
+.list-dogs-card {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.title-user-pets {
+  font-size: 2rem;
+  color: white;
+  font-weight: 600;
+  background-color: #2741cc;
+  padding: 0.5% 4%;
+  border-radius: 15px;
+}
+
+/* 
+PET DETAIL INFORMATION ADM */
+
+.photo-pet-card-adm {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.card-photo-container {
+  height: 100%;
+  margin-right: 3%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.list-pet-card {
+  background-color: #f2dcdd;
+  margin-top: 2%;
+  padding: 2% 5%;
+  width: 35%;
+  border-radius: 20px;
+}
